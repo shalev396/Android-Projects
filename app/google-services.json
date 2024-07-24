@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "462744600160",
+    "firebase_url": "https://flee-market-bcbef.firebaseio.com",
+    "project_id": "flee-market-bcbef",
+    "storage_bucket": "flee-market-bcbef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462744600160:android:7288d8ca56c86202f88d05",
+        "android_client_info": {
+          "package_name": "com.example.fleemarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462744600160-gvrkdalk36npm3m8c4jek82nnbkk84ef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fleemarket",
+            "certificate_hash": "412920e8470c0451d9be8092cc4a7ac3ae7b3c77"
+          }
+        },
+        {
+          "client_id": "462744600160-l6e03uaavkm3pu4f1k6huhvug0j3c9gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgZxsGBZP01dsUlqV_gld_PW39dBocHJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462744600160-l6e03uaavkm3pu4f1k6huhvug0j3c9gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

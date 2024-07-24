@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="226dp"
+            android:background="@drawable/back1" />
+
+        <ImageView
+            android:id="@+id/image_red"
+            android:layout_width="wrap_content"
+            android:layout_height="226dp"
+            android:alpha="0.5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+        <!--background end-->
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gitchgitch"
+            android:text="Enter your City"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+        <!--photo-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/textlogo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp">
+            <!--username-->
+            <LinearLayout
+                android:id="@+id/lnusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_gps" />
+
+
+                <TextView
+                    android:id="@+id/TVSellerUsername"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/gitchgitch"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:text="@string/city_"
+
+                    android:textColorHint="@color/colorHint"
+                     />
+                <EditText
+                    android:id="@+id/ETCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:hint="enter your city"
+
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/butCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/buttonw1"
+                android:text="@string/complete"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="12dp" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

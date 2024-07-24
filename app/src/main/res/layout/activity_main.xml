@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+    <!--background-->
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back1" />
+
+        <ImageView
+            android:id="@+id/image_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            android:src="@drawable/back" />
+        <!--background end-->
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gitchgitch"
+            android:text="@string/logo_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+        <!--photo-->
+
+        <ImageView
+            android:id="@+id/iv_userPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/textlogo"
+            android:layout_marginTop="-4dp"
+            android:background="@drawable/image_face" />
+
+        <TextView
+            android:id="@+id/TV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="89dp"
+            android:fontFamily="@font/gitchgitch"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/butEditUser"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/butLogOut"
+            android:background="@drawable/buttonw1"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRose"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/butLogOut"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="86dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/buttonw1"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRose"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lnSerch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_below="@id/iv_userPic"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/but_forsell"
+                android:layout_width="114dp"
+                android:layout_height="45dp"
+
+
+                android:background="@drawable/buttonw1"
+                android:text="@string/add"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ETSearch"
+                android:layout_width="133dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorWhite"
+
+                android:hint="@string/Search"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorHint"
+
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.481"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/but_search"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/buttonw1"
+                android:text="@string/Search"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.589"
+                app:layout_constraintStart_toEndOf="@+id/ETSearch"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--photo end-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnSerch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp">
+            <!--itwms Listview-->
+            <ListView
+                android:id="@+id/listvItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

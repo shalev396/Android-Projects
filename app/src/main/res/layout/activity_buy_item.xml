@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyItemActivity">
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/back1" />
+
+        <ImageView
+            android:id="@+id/image_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"
+            android:src="@drawable/back" />
+        <!--background end-->
+
+        <TextView
+            android:id="@+id/textlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gitchgitch"
+            android:text="@string/buy"
+            android:textColor="@color/colorWhite"
+            android:textSize="30dp" />
+        <!--photo-->
+
+        <ImageView
+            android:id="@+id/iv_itemPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/textlogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/image_face"
+            />
+
+        <!--photo end-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_itemPhoto"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp">
+            <!--itemForSale name-->
+
+            <Button
+                android:id="@+id/butSeller"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignBottom="@+id/butitemDonebuy"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="140dp"
+                android:layout_marginBottom="300dp"
+                android:background="@drawable/buttonw1"
+                android:text="@string/vSeller"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:id="@+id/lnusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_itemname" />
+
+                <TextView
+                    android:id="@+id/tvItemname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <!--delivery-->
+            <LinearLayout
+                android:id="@+id/lnname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnusername"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_shiping" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/deliveryway"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvDeliveryBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/delivery"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/cheIsDeliveryBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+
+
+                <TextView
+                    android:id="@+id/tvMid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="/"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvPickUpBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/pickup"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/cheIsPickUpBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+            </LinearLayout>
+            <!--paymet way-->
+
+            <LinearLayout
+                android:id="@+id/lnlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnname"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_itempay"
+                    android:id="@+id/ivicon_pay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/paymenwaybuy"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp"
+                    android:id="@+id/choosepay"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tvPaypalBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/paypal"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/cheIsPaypalBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/midLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="/"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvCashBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/cash"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/cheIsCashBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/midRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="/"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvBitBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/bit"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <CheckBox
+                    android:id="@+id/cheIsBitBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+            <!--price-->
+            <LinearLayout
+                android:id="@+id/ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnlastname"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_itemprise" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/prisebuy"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/TVprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/image_itemrate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gitchgitch"
+                    android:text="@string/ratebuy"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <RatingBar
+                    android:id="@+id/RBitem"
+                    style="?android:attr/ratingBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/butitemDonebuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lnRate"
+
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonw1"
+                android:text="@string/sold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRose"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

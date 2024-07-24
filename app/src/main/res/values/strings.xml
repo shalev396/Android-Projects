@@ -1,0 +1,67 @@
+<resources>
+    <!--app -->
+    <string name="app_name">Flea Market</string>
+    <string name="logo_name">Flea market</string>
+    <!--shortcut -->
+    <string name="signup">Don\'t have an Account? <b>Sign Up</b></string>
+    <string name="label1">Don\'t wait</string>
+    <string name="label2">Log in or create a new account now</string>
+    <!--buttons -->
+    <string name="Login">Log In</string>
+    <string name="Register">Register</string>
+    <string name="complete">Done</string>
+    <string name="take_photo">take a picture</string>
+    <string name="from_gallery">use from gallery</string>
+    <string name="add">add item for sell </string>
+    <string name="Search">Search</string>
+    <string name="edit">edit your profile</string>
+    <string name="logout">logout</string>
+    <string name="buyme">Buy</string>
+    <string name="sold">Buy</string>
+    <string name="vSeller">View Seller</string>
+    <string name="back">back</string>
+    <!--menu-->
+    <string name="sortPriceHToL">sort by price High to Low</string>
+    <string name="sortPriceLToH">sort by price Low to High</string>
+    <string name="sortOnlyFree">sort by only items for free</string>
+    <string name="sortOnlySell">sort by only items for sell</string>
+    <!--detail -->
+    <string name="email">Enter Email</string>
+    <string name="password">Enter Password</string>
+    <string name="conpassword">Enter Password again</string>
+    <string name="itemn">Enter item name</string>
+    <string name="phone">Enter phone number</string>
+    <string name="username">Enter username</string>
+    <string name="name">Enter first name</string>
+    <string name="last_name">Enter last name</string>
+    <string name="deliveryway">choose how to send :</string>
+    <string name="delivery">delivery</string>
+    <string name="pickup">pickup</string>
+    <string name="paymenway"> payment u accept :</string>
+    <string name="paymenwaybuy">choose payment :</string>
+    <string name="paypal">PayPal</string>
+    <string name="bit">Bit</string>
+    <string name="cash">Cash</string>
+    <string name="priseUsd">enter prise in usd$</string>
+    <string name="prise">enter prise</string>
+    <string name="prisebuy">prise :</string>
+    <string name="rate">Rate the item :</string>
+    <string name="ratebuy">item is rated :</string>
+    <string name="username_">username :</string>
+    <string name="fname__">first name :</string>
+    <string name="phone__">phone :</string>
+    <string name="offer__">offer sold :</string>
+    <string name="city_">city :</string>
+    <string name="sellerR_">Rate by buyers :</string>
+    <string name="Rate_">Rate :</string>
+
+
+
+
+    <!--titles -->
+    <string name="sell">Enter details about item</string>
+    <string name="buy">Item details</string>
+    <string name="seller">Seller Details</string>
+
+
+</resources>

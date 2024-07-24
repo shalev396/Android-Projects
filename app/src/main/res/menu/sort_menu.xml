@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/mnItemsortHL"
+    android:title="@string/sortPriceHToL"/>
+    <item android:id="@+id/mnItemsortLH"
+        android:title="@string/sortPriceLToH"/>
+    <item android:id="@+id/mnItemsortFree"
+        android:title="@string/sortOnlyFree"/>
+    <item android:id="@+id/mnItemsorsell"
+        android:title="@string/sortOnlySell"/>
+    <item android:id="@+id/mnItemBought"
+        android:title="sort by only your purchases"/>
+    <item android:id="@+id/mnReset"
+        android:title="Refresh"/>
+</menu>
