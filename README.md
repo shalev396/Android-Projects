@@ -93,4 +93,5 @@ For more detailed documentation about the project, refer to the following link:
 
 ### License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+- This project is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit CC BY-NC-ND 4.0.
+- read "LICENSE" form more details
