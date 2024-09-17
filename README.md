@@ -72,6 +72,35 @@ Unit tests are included under the `app/src/test/java` directory. You can run the
 ```bash
 ./gradlew test
 ```
+## Running the APK
+
+To install and run the Fleemarket APK on your Android device, follow these steps:
+
+### Step 1: Download the APK
+1. Download the APK file from the [(provided source)](https://github.com/shalev396/Android-project-Fleemarket/tree/master/apk).
+
+### Step 2: Allow Installation from Unknown Sources
+Since the APK is not from the Google Play Store, you will need to enable installations from unknown sources:
+1. Open your device’s **Settings**.
+2. Navigate to **Security** (or **Privacy** on some devices).
+3. Find and enable **Install apps from unknown sources** (this might be under a submenu like **Install unknown apps**).
+4. Select your preferred file manager or browser to allow this permission.
+
+### Step 3: Install the APK
+1. Locate the downloaded APK file (usually in your Downloads folder).
+2. Tap the APK file to start the installation process.
+3. Follow the on-screen instructions to install the app.
+
+### Step 4: Run the App
+1. Once the installation is complete, you can open the app by tapping **Open** from the installation screen or by finding it in your app drawer.
+2. Make sure you have an active internet connection, as the app relies on Firebase services for authentication and data sync.
+
+If you encounter any issues, ensure that your device meets the following requirements:
+
+- **Android OS Version**: Android 4.4 (KitKat) or higher (API Level 19+)
+- **RAM**: Minimum of 2GB
+- **Storage**: At least 50MB of free space
+
 
 ## Documentation
 
